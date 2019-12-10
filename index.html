@@ -1,0 +1,123 @@
+<!--
+         Email:utsav_patel@student.uml.edu
+           Name: Utsav Patel
+           I am a junior/senoir at Umass Lowell in  91.61 GUI Programming I
+           91.461 Assignment: Creating multiplication table error
+           Utsav Patel, UMass Lowell Computer Science, upatel@cs.uml.edu
+           Copyright (c) 2019 by Utsav Patel.  All rights reserved.  May be
+           freely copied or excerpted for educational purposes with credit to
+           the author.
+            updated by UP on december 1st, 2019 at 9:23 AM
+           w3schools.com was used for references
+-->
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="css/hw.css">
+      <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link rel = "stylesheet" href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+
+
+    <title>Multiplication Table</title>
+  </head>
+  <body>
+
+
+    <h1 class="heading">Multiplication Table</h1>
+    <p> This is a multipcation table please provide numbers to calculate.
+       BE AWARE The starting number must be smaller than ending number and must be integer. </p>
+       <p class="p1"> If a number is earsed or left blank it will ask to enter number <br>
+      The second number(horizontal or vertical number) has to be greater <br>Than the previous one if not it will show
+    Please enter a greater number than previous entered <br>
+    If number is invalid  (for example double -- sign not; limited to) it will say invalid number</p>
+       <p class="paragraph">***Only use reset option if you get Invalid Input/don't use after clicking submit, Submit Button NOT required to be used ***</p>
+
+      <div class="row col-md-offset-3">
+    <!-- This is creating a form in which the user will input their numbers. -->
+      <form class="col-md-8" id="myform">
+          <div class="form-group">
+            <p>
+                  <label>Please enter horizontal first number:</label>
+                    <input type="number" name="firstHorizontal" id="firstHorizontal"  placeholder="first horizontal">
+                    </p>
+                      <div id="slider1"></div>
+                  </div>
+
+
+                <div class="form-group">
+                  <p>
+                         <label >Please enter second horizontal number:</label>
+                           <input type="number" name="lastHorizontal" id="lastHorizontal"  placeholder="last horizontal">
+                           </p>
+                              <div id="slider2"></div>
+                         </div>
+
+                       <div class="form-group">
+                         <p>
+                         <label >Please enter first vertical number:</label>
+                           <input type="number" name="firstVertical" id="firstVertical" placeholder="first vertical" >
+                           </p>
+                              <div id="slider3">
+                              </div>
+
+                                <br>
+                       <div class="form-group">
+                         <p>
+                         <label >Please enter second vertical number:</label>
+                           <input type="number" name="lastVertical" id="lastVertical" placeholder="last vertical" >
+                           </p>
+                              <div id="slider4"></div>
+                         </div>
+        </div>
+
+          <form id="myFormreset">
+
+         <!-- When calculate button is clicked it will show the multiplication table
+              Extra feature: Reset button (optional to use)
+            Also save table in the tab was also used in this-->
+
+      <button class="calculate" type="submit" value="Submit">Submit</button>
+            <input class="reset" type="button" onclick="reset()" value="Reset form">
+            <button class="save"  type="button" id="save" onClick="saving();">Save</button>
+
+            </form>
+
+
+<hr>
+
+      <!-- This will show the output of the table in this there is a bootstrap table-bordered
+      class used to give the borders
+    As well as the table saved id for the tabs is created here as well. -->
+
+      <div class="container-fluid pt-9"  id="multipcationtables">
+        <table class="table table-bordered" id="multipcationtable">
+        </table>
+      </div>
+      <div class="container-fluid pt-9">
+        <h3>Table saved</h3>
+      </div>
+      <div class="col-11 mx-auto" id="multiplicationtabs">
+        <ul></ul>
+      </div>
+      </div>
+
+
+
+
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+    <script src="js/hw.js"></script>
+
+
+  </body>
+  </html>

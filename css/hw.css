@@ -1,0 +1,109 @@
+/*
+         Email:utsav_patel@student.uml.edu
+           Name: Utsav Patel
+           I am a junior/senoir at Umass Lowell in  91.61 GUI Programming I
+
+           91.461 Assignment: Creating multiplication table error
+           Utsav Patel, UMass Lowell Computer Science, upatel@cs.uml.edu
+           Copyright (c) 2019 by Utsav Patel.  All rights reserved.  May be
+           freely copied or excerpted for educational purposes with credit to
+           the author.
+           updated by UP on december 1st, 2019 at 9:23 AM
+           w3schools.com was used for references
+*/
+/*padding for the table and the color and styles of the slider*/
+#slider1 {
+background-color:orange;
+}
+#slider2 {
+background-color:white;
+
+}
+#slider3 {
+background-color:blue;
+
+}
+#slider4 {
+background-color:green;
+
+}
+.heading{
+  text-align:center;
+}
+table {
+  padding-top:5px;
+  padding: 5px;
+  border: solid 2px Black;
+}
+
+
+/*this will add the background color and color to the number*/
+th {
+background-color: darkgray;
+color:orange;
+}
+
+td{
+     font-weight: bold;
+     text-align:center;
+}
+/* This will add color to all the odd coloums */
+td:nth-child(2n+1) {
+  background-color: lightblue;
+}
+
+/* adds gradient in the form and align it in center*/
+form {
+  background-image: linear-gradient(green, orange);
+  text-align:center;
+  padding: 25px;
+  margin-left: auto;
+   margin-right: auto;
+
+
+       margin-right: -20%;
+}
+
+/*adds graident to the calculate and reset button*/
+.calculate{
+background-image: linear-gradient(purple, yellow);
+margin: auto;
+width: 80%;
+border: 5px solid black;
+  text-align: center;
+display: block;
+
+}
+.reset {
+  background-image: linear-gradient(red, orange);
+  margin: auto;
+  width: 80%;
+  border: 5px solid darkgray;
+  text-align: center;
+display: block;
+
+}
+.save{
+
+  background-image: linear-gradient(purple, yellow);
+  margin: auto;
+  width: 80%;
+  border: 5px solid black;
+    text-align: center;
+  display: block;
+
+}
+/*this will algin the paragram in the center*/
+.p1{
+  text-align: center;
+  font-size:15px;
+}
+.paragraph
+{
+  color:red;
+  text-align: center;
+    font-size:15px;
+}
+input{
+    background-color: white;
+}
